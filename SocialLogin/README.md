@@ -53,7 +53,7 @@ implementation project(path: ':SocialLogin')
     ```
     /* Add it in your parent activity */
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    protected void onActivityResult(requestCode: Int,resultCode: Int,data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data);
         val yourFragmentName: YourFragmentName? =
             supportFragmentManager.findFragmentByTag("YOUR_TAG") as YourFragmentName?
